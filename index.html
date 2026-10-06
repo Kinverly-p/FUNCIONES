@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mis 15 Funciones</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Mis 15 Funciones</h1>
+        <p class="subtitle">Escribe en la tarjeta que desees y obtén el resultado en pantalla</p>
+    </header>
+
+    <!-- Pantalla Superior de Resultados -->
+    <div class="pantalla-resultado">
+        <h3>Resultado en Pantalla</h3>
+        <div id="resultado">Haz clic en cualquier función...</div>
+    </div>
+
+    <!-- Contenedor con las 15 funciones separadas -->
+    <div class="grid-tarjetas">
+
+        <!-- 1. Saludo -->
+        <div class="card">
+            <h3>Saludo</h3>
+            <button onclick="saludo()">Saludar</button>
+        </div>
+
+        <!-- 2. Nombre -->
+        <div class="card">
+            <h3> Nombre</h3>
+            <input type="text" id="nombreInput" placeholder="Tu nombre...">
+            <button onclick="mostrarNombre()">Mostrar</button>
+        </div>
+
+        <!-- 3. Suma -->
+        <div class="card">
+            <h3> Suma</h3>
+            <input type="number" id="sumaN1" placeholder="Número 1">
+            <input type="number" id="sumaN2" placeholder="Número 2">
+            <button onclick="calcularSuma()">Sumar</button>
+        </div>
+
+        <!-- 4. Promedio -->
+        <div class="card">
+            <h3>Promedio</h3>
+            <input type="number" id="prom1" placeholder="Nota 1">
+            <input type="number" id="prom2" placeholder="Nota 2">
+            <input type="number" id="prom3" placeholder="Nota 3">
+            <button onclick="calcularPromedio()">Calcular</button>
+        </div>
+
+        <!-- 5. Edad -->
+        <div class="card">
+            <h3> Edad</h3>
+            <input type="number" id="edadInput" placeholder="Tu edad...">
+            <button onclick="verificarEdad()">Verificar</button>
+        </div>
+
+        <!-- 6. Descuento -->
+        <div class="card">
+            <h3> Descuento</h3>
+            <input type="number" id="precioInput" placeholder="Precio ($)...">
+            <button onclick="calcularDescuento()">Calcular</button>
+        </div>
+
+        <!-- 7. Área -->
+        <div class="card">
+            <h3> Área Triángulo</h3>
+            <input type="number" id="baseInput" placeholder="Base">
+            <input type="number" id="alturaInput" placeholder="Altura">
+            <button onclick="calcularArea()">Calcular</button>
+        </div>
+
+        <!-- 8. Conversión -->
+        <div class="card">
+            <h3> Metros a Cm</h3>
+            <input type="number" id="metroInput" placeholder="Metros...">
+            <button onclick="convertirMetros()">Convertir</button>
+        </div>
+
+        <!-- 9. Par o Impar -->
+        <div class="card">
+            <h3> Par o Impar</h3>
+            <input type="number" id="parInput" placeholder="Número...">
+            <button onclick="verificarPar()">Verificar</button>
+        </div>
+
+        <!-- 10. Positivo / Negativo -->
+        <div class="card">
+            <h3> Positivo / Negativo</h3>
+            <input type="number" id="positivoInput" placeholder="Número...">
+            <button onclick="verificarNumero()">Evaluar</button>
+        </div>
+
+        <!-- 11. Vocal -->
+        <div class="card">
+            <h3> Vocal / Consonante</h3>
+            <input type="text" id="vocalInput" maxlength="1" placeholder="Una letra...">
+            <button onclick="verificarVocal()">Comprobar</button>
+        </div>
+
+        <!-- 12. Invertir Texto -->
+        <div class="card">
+            <h3> Invertir Texto</h3>
+            <input type="text" id="invertirInput" placeholder="Escribe algo...">
+            <button onclick="invertirTexto()">Invertir</button>
+        </div>
+
+        <!-- 13. Factorial -->
+        <div class="card">
+            <h3> Factorial</h3>
+            <input type="number" id="factorialInput" placeholder="Número...">
+            <button onclick="calcularFactorial()">Calcular</button>
+        </div>
+
+        <!-- 14. Fecha -->
+        <div class="card">
+            <h3> Fecha Actual</h3>
+            <button onclick="mostrarFecha()">Ver Fecha</button>
+        </div>
+
+        <!-- 15. Aleatorio -->
+        <div class="card">
+            <h3>Aleatorio</h3>
+            <input type="number" id="minInput" placeholder="Mínimo">
+            <input type="number" id="maxInput" placeholder="Máximo">
+            <button onclick="numeroAleatorio()">Generar</button>
+        </div>
+
+    </div>
+
+    <!-- TUS 15 ARCHIVOS JAVASCRIPT SEPARADOS -->
+    <script src="saludo.js"></script>
+    <script src="nombre.js"></script>
+    <script src="suma.js"></script>
+    <script src="promedio.js"></script>
+    <script src="edad.js"></script>
+    <script src="descuento.js"></script>
+    <script src="area.js"></script>
+    <script src="convertir.js"></script>
+    <script src="par.js"></script>
+    <script src="positivo.js"></script>
+    <script src="vocal.js"></script>
+    <script src="invertir.js"></script>
+    <script src="factorial.js"></script>
+    <script src="fecha.js"></script>
+    <script src="aleatorio.js"></script>
+
+</body>
+</html>

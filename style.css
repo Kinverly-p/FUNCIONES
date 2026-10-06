@@ -1,0 +1,247 @@
+:root {
+    --primary: #3b82f6;
+    --primary-hover: #2563eb;
+    --bg-color: #eca5dd;
+    --card-bg: #b2c8ec;
+    --text-main: #f8fafc;
+    --text-muted: #94a3b8;
+    --border-color: #c3d4eb;
+    --shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.3);
+}
+
+body {
+    font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+    background-color: var(--bg-color);
+    color: var(--text-main);
+    margin: 0;
+    padding: 40px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+h1 {
+    font-size: 2.5rem;
+    color: var(--text-main);
+    margin-bottom: 5px;
+}
+
+p.subtitle {
+    color: var(--text-muted);
+    font-size: 1rem;
+    margin: 0;
+}
+
+/* Pantalla de Resultados Interactiva */
+.pantalla-resultado {
+    background: var(--card-bg);
+    border: 2px solid var(--border-color);
+    border-radius: 14px;
+    padding: 20px;
+    width: 100%;
+    max-width: 650px;
+    margin-bottom: 35px;
+    box-shadow: var(--shadow);
+    text-align: center;
+}
+
+.pantalla-resultado h3 {
+    margin: 0 0 8px 0;
+    font-size: 0.85rem;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    color: var(--text-muted);
+}
+
+#resultado {
+    font-size: 1.35rem;
+    font-weight: 600;
+    color: #60a5fa;
+    min-height: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Contenedor de Botones (Grid) */
+.contenedor {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(190px, 1fr));
+    gap: 14px;
+    width: 100%;
+    max-width: 950px;
+}
+
+button {
+    padding: 14px 16px;
+    border: 1px solid var(--border-color);
+    border-radius: 10px;
+    background: var(--card-bg);
+    color: var(--text-main);
+    font-weight: 500;
+    font-size: 0.95rem;
+    cursor: pointer;
+    box-shadow: 0 4px 6px -1px rgba(199, 138, 191, 0.1);
+    transition: all 0.25s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+}
+
+button:hover {
+    background: var(--primary);
+    border-color: var(--primary);
+    transform: translateY(-3px);
+    box-shadow: var(--shadow);
+}
+
+button:active {
+    transform: translateY(0);
+}
+.tarjeta-input {
+    background: #1e293b;
+    padding: 15px;
+    border-radius: 10px;
+    border: 1px solid #334155;
+    margin: 10px auto;
+    max-width: 300px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.tarjeta-input input {
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid #475569;
+    background: #0f172a;
+    color: white;
+}
+:root {
+    --primary: #2563eb;
+    --primary-hover: #1d4ed8;
+    --bg-color: #0f172a;
+    --card-bg: #1e293b;
+    --text-main: #f8fafc;
+    --text-muted: #94a3b8;
+    --border-color: #334155;
+    --shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.3);
+}
+
+body {
+    font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+    background-color: var(--bg-color);
+    color: var(--text-main);
+    margin: 0;
+    padding: 30px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+h1 {
+    font-size: 2.2rem;
+    margin-bottom: 5px;
+}
+
+p.subtitle {
+    color: var(--text-muted);
+    font-size: 0.95rem;
+    margin: 0;
+}
+
+.pantalla-resultado {
+    background: var(--card-bg);
+    border: 2px solid var(--primary);
+    border-radius: 12px;
+    padding: 15px 25px;
+    width: 100%;
+    max-width: 600px;
+    text-align: center;
+    margin-bottom: 25px;
+    box-shadow: var(--shadow);
+}
+
+.pantalla-resultado h3 {
+    margin: 0 0 5px 0;
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: var(--text-muted);
+}
+
+#resultado {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #60a5fa;
+    min-height: 28px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.grid-tarjetas {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 14px;
+    width: 100%;
+    max-width: 1100px;
+}
+
+.card {
+    background: var(--card-bg);
+    border: 1px solid var(--border-color);
+    border-radius: 10px;
+    padding: 14px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+}
+
+.card h3 {
+    margin: 0;
+    font-size: 0.95rem;
+}
+
+.card input {
+    background: #0f172a;
+    border: 1px solid var(--border-color);
+    border-radius: 6px;
+    padding: 7px 10px;
+    color: white;
+    font-size: 0.85rem;
+    outline: none;
+}
+
+.card input:focus {
+    border-color: var(--primary);
+}
+
+.card button {
+    background: var(--primary);
+    color: white;
+    border: none;
+    border-radius: 6px;
+    padding: 7px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.card button:hover {
+    background: var(--primary-hover);
+}
